@@ -1,0 +1,5 @@
+<If "%{HTTPS} != 'on' || %{HTTP_HOST} != 'kreativ-werkstatt-reimer.de'">
+    Redirect / https://kreativ-werkstatt-reimer.de/
+</If>
+
+ErrorDocument 404 https://kreativ-werkstatt-reimer.de/404.html

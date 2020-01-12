@@ -1,0 +1,28 @@
+title: "Kreativ Werkstatt Reimer"
+baseURL: "https://kreativ-werkstatt-reimer.de/"
+metaDataFormat: "yaml"
+disableKinds:
+  - taxonomies
+  - taxonomyTerm
+
+enableEmoji: true
+enableRobotsTXT: true
+enableGitInfo: true
+
+defaultContentLanguage: "de"
+languageCode: "de-DE"
+languageName: "German (Germany)"
+
+menu:
+  main:
+  - identifier: facebook
+    name: Facebook
+    url: http://www.facebook.com/pages/Kreativ-Werkstatt-Heike-Reimer/218117284887611
+
+sitemap:
+  changeFreq: "monthly"
+  priority: 0.5
+  filename: "sitemap.xml"
+
+params:
+  env: production
