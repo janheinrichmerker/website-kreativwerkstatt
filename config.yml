@@ -1,5 +1,5 @@
 title: "Kreativ Werkstatt Reimer"
-baseURL: "https://kreativ-werkstatt-reimer.de/"
+baseURL: "https://kwr.uber.space/"
 metaDataFormat: "yaml"
 disableKinds:
   - taxonomies
