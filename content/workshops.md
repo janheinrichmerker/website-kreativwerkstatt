@@ -14,7 +14,7 @@ nach Vorlage/Muster oder nach Ihren eigenen Ideen…
 
 Hier sind ein paar Impressionen von meinem Perlenworkshop in der Wundertüte am 6. April 2013:  
 ![Impressionen vom Schmuckabend](/bilder/workshop1.jpg)
-![Impressionen vom Schmuckabend](/bilder/workshop3.jpg)
+![Impressionen vom Schmuckabend](/bilder/workshop2.jpg)
 
 ## Sternlampen falten
 
