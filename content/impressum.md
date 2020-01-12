@@ -1,9 +1,8 @@
 ---
-title: Impressum / Imprint
+title: Impressum
 menu:
     footer:
         weight: 1
-        name: Imprint
 ---
 
 ## Angaben gemäß § 5 TMG
