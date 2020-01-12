@@ -1,8 +1,9 @@
 ---
 title: Kunsthandwerkermärkte
 menu:
-    main:
-        name: Märkte
+  main:
+    weight: 2
+    name: Märkte
 ---
 
 Sie finden mich und meine Produkte demnächst auf folgenden Kunsthandwerkermärkten:

@@ -1,8 +1,8 @@
 ---
 title: Impressum
 menu:
-    footer:
-        weight: 1
+  footer:
+    weight: 1
 ---
 
 ## Angaben gemäß § 5 TMG

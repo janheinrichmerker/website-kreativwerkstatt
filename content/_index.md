@@ -1,4 +1,8 @@
 ---
+menu:
+  main:
+    weight: 1
+    name: Home
 ---
 
 # Herzlich Willkommen in meiner Kreativ Werkstatt

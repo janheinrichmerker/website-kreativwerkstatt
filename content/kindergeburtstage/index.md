@@ -1,8 +1,9 @@
 ---
 title: Kreative Kindergeburtstage
 menu:
-    main:
-        name: Kindergeburtstage
+  main:
+    weight: 4
+    name: Kindergeburtstage
 ---
 
 Ich komme an Deinem Geburtstag zu Dir
@@ -15,4 +16,4 @@ und gestalte mit Dir und Deinen Gästen:
 - Kuschelkissen für die Kissenschlacht
 - und vieles mehr!
 
-![Impressionen vom Kindergeburtstag](/bilder/kindergeburtstag.jpg)
+{{< figure "**" "Impressionen vom Kindergeburtstag" >}}

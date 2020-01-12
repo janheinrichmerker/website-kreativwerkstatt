@@ -14,7 +14,7 @@ languageCode: "de-DE"
 languageName: "German (Germany)"
 
 menu:
-  main:
+  footer:
   - identifier: facebook
     name: Facebook
     url: http://www.facebook.com/pages/Kreativ-Werkstatt-Heike-Reimer/218117284887611

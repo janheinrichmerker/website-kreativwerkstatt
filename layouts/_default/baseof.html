@@ -42,6 +42,10 @@
 
 <body class="{{ $.Site.Params.env }} {{ if .IsHome }} home {{ else }} page-{{ anchorize .Title }} {{ end }}">
 
+{{ block "header" . }}
+{{ partial "header.html" . }}
+{{ end }}
+
 {{ block "navigation" . }}
 {{ partial "navigation.html" . }}
 {{ end }}

@@ -1,0 +1,14 @@
+{{ with $.Page.Resources.ByType "image" }}
+<section class="gallery">
+    {{ range . }}
+    <a href="{{ .RelPermalink }}" data-lightbox="gallery">
+        <figure>
+            <img src="{{ .RelPermalink }}" />
+            {{ if not (eq .Title .Name) }}
+            <figcaption>{{ .Title }}</figcaption>
+            {{ end }}
+        </figure>
+    </a>
+    {{ end }}
+</section>
+{{ end }}

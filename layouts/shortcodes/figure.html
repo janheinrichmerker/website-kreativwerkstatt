@@ -1,0 +1,7 @@
+{{ $images := $.Page.Resources.Match (.Get 0) }}
+<figure>
+    {{ range $images }}
+    <img src="{{ .RelPermalink }}" />
+    {{ end }}
+    <figcaption>{{ (.Get 1) }}</figcaption>
+</figure>

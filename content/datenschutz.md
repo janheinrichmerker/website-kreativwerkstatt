@@ -1,9 +1,9 @@
 ---
 title: Datenschutzerklärung
 menu:
-    footer:
-        weight: 2
-        name: Datenschutz
+  footer:
+    weight: 2
+    name: Datenschutz
 ---
 
 ## 1. Datenschutz auf einen Blick
