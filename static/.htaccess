@@ -1,14 +1,30 @@
 <If "%{HTTPS} != 'on' || %{HTTP_HOST} != 'kreativ-werkstatt-reimer.de'">
-    Redirect / https://kreativ-werkstatt-reimer.de/
+    Redirect permanent / https://kreativ-werkstatt-reimer.de/
 </If>
 
 ErrorDocument 404 https://kreativ-werkstatt-reimer.de/404.html
 
 # Legacy redirects
-Redirect /index.php?site=disclaimer https://kreativ-werkstatt-reimer.de/impressum/
-Redirect /index.php?site=contact https://kreativ-werkstatt-reimer.de/impressum/
-Redirect /index.php?site=gallery https://kreativ-werkstatt-reimer.de/galerie/
-Redirect /index.php?site=page&id=132 https://kreativ-werkstatt-reimer.de/kindergeburtstage/
-Redirect /index.php?site=page&id=133 https://kreativ-werkstatt-reimer.de/workshops/
-Redirect /index.php?site=page&id=136 https://kreativ-werkstatt-reimer.de/märkte/
-Redirect /index.php https://kreativ-werkstatt-reimer.de/
+<Location "index.php">
+    <If "%{QUERY_STRING} =~ /^site=disclaimer/">
+        Redirect https://kreativ-werkstatt-reimer.de/impressum/
+    </If>
+    <ElseIf "%{QUERY_STRING} =~ /^site=contact/">
+        Redirect https://kreativ-werkstatt-reimer.de/impressum/
+    </ElseIf>
+    <ElseIf "%{QUERY_STRING} =~ /^site=gallery/">
+        Redirect https://kreativ-werkstatt-reimer.de/galerie/
+    </ElseIf>
+    <ElseIf "%{QUERY_STRING} =~ /^site=page&id=132/">
+        Redirect https://kreativ-werkstatt-reimer.de/kindergeburtstage/
+    </ElseIf>
+    <ElseIf "%{QUERY_STRING} =~ /^site=page&id=133/">
+        Redirect https://kreativ-werkstatt-reimer.de/workshops/
+    </ElseIf>
+    <ElseIf "%{QUERY_STRING} =~ /^site=page&id=136/">
+        Redirect https://kreativ-werkstatt-reimer.de/märkte/
+    </ElseIf>
+    <Else>
+        Redirect https://kreativ-werkstatt-reimer.de/
+    </Else>
+</Location>
