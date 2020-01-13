@@ -3,3 +3,12 @@
 </If>
 
 ErrorDocument 404 https://kreativ-werkstatt-reimer.de/404.html
+
+# Legacy redirects
+Redirect /index.php?site=disclaimer https://kreativ-werkstatt-reimer.de/impressum/
+Redirect /index.php?site=contact https://kreativ-werkstatt-reimer.de/impressum/
+Redirect /index.php?site=gallery https://kreativ-werkstatt-reimer.de/galerie/
+Redirect /index.php?site=page&id=132 https://kreativ-werkstatt-reimer.de/kindergeburtstage/
+Redirect /index.php?site=page&id=133 https://kreativ-werkstatt-reimer.de/workshops/
+Redirect /index.php?site=page&id=136 https://kreativ-werkstatt-reimer.de/märkte/
+Redirect /index.php https://kreativ-werkstatt-reimer.de/
