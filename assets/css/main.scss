@@ -100,6 +100,7 @@ body{
                 }
 
                 a {
+                    display: block;
                     text-decoration: none;
                     color: $color;
 
@@ -120,7 +121,12 @@ body{
     }
 
     main {
-        padding: 2em;
+        box-sizing: border-box;
+        padding: 1em;
+
+        @media (min-width: 0.8 * $max-width) {
+            padding: 2em;
+        }
 
         img {
             $img-max-width: 0.7;
@@ -205,15 +211,23 @@ body{
     }
 
     footer {
+        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 1em 2em;
-        padding: 1em 0;
+        padding: 0.5em;
         border-top: 1px solid fade_out($color, 0.9);
 
+        @media (min-width: 0.8 * $max-width) {
+            padding: 1em;
+        }
+
         ul, p {
-            margin: 0;
+            margin: 0.5em;
+
+            @media (min-width: 0.8 * $max-width) {
+                margin: 1em;
+            }
         }
 
         ul {
