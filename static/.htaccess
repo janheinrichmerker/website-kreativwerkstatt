@@ -5,26 +5,26 @@
 ErrorDocument 404 https://kreativ-werkstatt-reimer.de/404.html
 
 # Legacy redirects
-<Location "index.php">
+<Files "index.php">
     <If "%{QUERY_STRING} =~ /^site=disclaimer/">
-        Redirect https://kreativ-werkstatt-reimer.de/impressum/
+        Redirect https://kreativ-werkstatt-reimer.de/impressum/?legacy=✓
     </If>
     <ElseIf "%{QUERY_STRING} =~ /^site=contact/">
-        Redirect https://kreativ-werkstatt-reimer.de/impressum/
+        Redirect https://kreativ-werkstatt-reimer.de/impressum/?legacy=✓
     </ElseIf>
     <ElseIf "%{QUERY_STRING} =~ /^site=gallery/">
-        Redirect https://kreativ-werkstatt-reimer.de/galerie/
+        Redirect https://kreativ-werkstatt-reimer.de/galerie/?legacy=✓
     </ElseIf>
     <ElseIf "%{QUERY_STRING} =~ /^site=page&id=132/">
-        Redirect https://kreativ-werkstatt-reimer.de/kindergeburtstage/
+        Redirect https://kreativ-werkstatt-reimer.de/kindergeburtstage/?legacy=✓
     </ElseIf>
     <ElseIf "%{QUERY_STRING} =~ /^site=page&id=133/">
-        Redirect https://kreativ-werkstatt-reimer.de/workshops/
+        Redirect https://kreativ-werkstatt-reimer.de/workshops/?legacy=✓
     </ElseIf>
     <ElseIf "%{QUERY_STRING} =~ /^site=page&id=136/">
-        Redirect https://kreativ-werkstatt-reimer.de/märkte/
+        Redirect https://kreativ-werkstatt-reimer.de/märkte/?legacy=✓
     </ElseIf>
     <Else>
-        Redirect https://kreativ-werkstatt-reimer.de/
+        Redirect https://kreativ-werkstatt-reimer.de/?legacy=✓
     </Else>
-</Location>
+</Files>
