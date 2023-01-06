@@ -1,5 +1,5 @@
-[![CI](https://img.shields.io/github/workflow/status/heinrichreimer/website-kreativwerkstatt/CI?style=flat-square)](https://github.com/heinrichreimer/website-kreativwerkstatt/actions?query=workflow%3ACI)
-[![Deploy](https://img.shields.io/github/workflow/status/heinrichreimer/website-kreativwerkstatt/Deploy/master?label=deploy&style=flat-square)](https://github.com/heinrichreimer/website-kreativwerkstatt/actions?query=workflow%3ADeploy)
+[![CI](https://img.shields.io/github/actions/workflow/status/heinrichreimer/website-kreativwerkstatt/ci.yml?branch=master&style=flat-square)](https://github.com/heinrichreimer/website-kreativwerkstatt/actions/workflows/ci.yml)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/heinrichreimer/website-kreativwerkstatt/ci.yml?branch=master&label=deploy&style=flat-square)](https://github.com/heinrichreimer/website-kreativwerkstatt/actions/workflows/deploy.yml)
 [![Issues](https://img.shields.io/github/issues/heinrichreimer/website-kreativwerkstatt?style=flat-square)](https://github.com/heinrichreimer/website-kreativwerkstatt/issues)
 [![License](https://img.shields.io/github/license/heinrichreimer/website-kreativwerkstatt?style=flat-square)](https://github.com/heinrichreimer/website-kreativwerkstatt)
 
