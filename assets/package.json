@@ -1,6 +1,6 @@
 {
   "license": "SEE LICENSE IN ../LICENSE",
   "dependencies": {
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^8.0.0"
   }
 }
