@@ -4,6 +4,7 @@ on: push
 
 jobs:
   build:
+    name: "🏗️ Hugo build"
     runs-on: ubuntu-latest
     steps:
       - name: "📥 Check-out"
@@ -11,17 +12,21 @@ jobs:
       - name: "🧰 Install Hugo"
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 0.59.1
+          hugo-version: "0.104.3"
           extended: true
-      - name: "🧰 Install Node"
-        uses: actions/setup-node@v4
+      - name: "♻️ Cache Hugo modules"
+        uses: actions/cache@v4
         with:
-          node-version: 8.16.x
-      - name: "🧰 Install Yarn"
-        run: npm install -g yarn
-      - name: "🧰 Install asset dependencies"
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugo-modules-${{ hashFiles('**/go.sum') }}
+          restore-keys: ${{ runner.os }}-hugo-modules-
+      - name: 🧰 Install dart-sass-embedded
         run: |
-          cd assets
-          yarn install
+          curl -LJO https://github.com/sass/dart-sass-embedded/releases/download/1.56.2/sass_embedded-1.56.2-linux-x64.tar.gz;
+          echo "9e4f455f7b8619959d7878af2862383be58392eb963a14ff87cc512c03701e2a  sass_embedded-1.56.2-linux-x64.tar.gz" | sha256sum -c;
+          tar -xvf sass_embedded-1.56.2-linux-x64.tar.gz;
+          echo "$GITHUB_WORKSPACE/sass_embedded/" >> $GITHUB_PATH
       - name: "🏗 Build"
         run: hugo
+        env:
+          HUGO_PARAMS_githubToken: ${{ secrets.GITHUB_TOKEN }}
