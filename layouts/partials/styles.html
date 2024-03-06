@@ -1,3 +1,4 @@
 <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Imprima|Schoolbell&display=swap" rel="stylesheet">
-{{ $style := resources.Get "/css/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+{{ $opts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
+{{ $style := resources.Get "/css/main.scss" | resources.ToCSS $opts | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
