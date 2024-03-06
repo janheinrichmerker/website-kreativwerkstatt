@@ -2,8 +2,7 @@ title: "Kreativ Werkstatt Reimer"
 baseURL: "https://kreativ-werkstatt-reimer.de/"
 metaDataFormat: "yaml"
 disableKinds:
-  - taxonomies
-  - taxonomyTerm
+  - taxonomy
 
 enableEmoji: true
 enableRobotsTXT: true
