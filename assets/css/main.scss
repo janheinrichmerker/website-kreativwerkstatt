@@ -1,6 +1,8 @@
 @import "../node_modules/normalize-scss/sass/normalize";
 @include normalize();
 
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint|Imprima|Schoolbell&display=swap');
+
 $color: #370a0b;
 $color-accent: #ad1119;
 $background: #fffef5;
