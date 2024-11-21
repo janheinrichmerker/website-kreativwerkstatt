@@ -49,7 +49,7 @@ jobs:
         id: linkCheck
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --require-https --verbose --no-progress --base public/ --cache --max-cache-age 1d --exclude https://twitter.com/H1iReimer/ --exclude heinrich@reimer.family --accept 999 --max-retries 10 --max-redirects 10 public/
+          args: --require-https --verbose --no-progress --base public/ --cache --max-cache-age 1d --exclude https://twitter.com/H1iReimer/ --exclude heinrich@reimer.family --accept 999 --max-retries 10 --max-redirects 10 public/ --base https://kreativ-werkstatt-reimer.de/
           fail: true
       - name: 📤 Upload public pages
         uses: actions/upload-artifact@v4
