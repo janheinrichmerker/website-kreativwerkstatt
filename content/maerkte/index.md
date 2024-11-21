@@ -4,6 +4,8 @@ menu:
   main:
     weight: 2
     name: Märkte
+aliases:
+  - /märkte/
 ---
 
 Sie finden mich und meine Produkte demnächst auf folgenden Kunsthandwerkermärkten:
