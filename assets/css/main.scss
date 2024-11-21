@@ -1,5 +1,5 @@
-@import "../node_modules/normalize-scss/sass/normalize";
-@include normalize();
+@use "../node_modules/normalize-scss/sass/normalize" as normalize;
+@include normalize.normalize();
 
 @import url('https://fonts.googleapis.com/css?family=Finger+Paint|Imprima|Schoolbell&display=swap');
 
@@ -54,7 +54,7 @@ body{
             line-height: 1.5;
             background: fade_out($background, 0.4);
 
-            @media (min-width: 0.8 * $max-width) {
+            @media (min-width: calc(0.8 * $max-width)) {
                 font-size: 2em;
             }
 
@@ -97,7 +97,7 @@ body{
                 padding: 0 1em;
                 text-align: center;
 
-                @media (min-width: 0.8 * $max-width) {
+                @media (min-width: calc(0.8 * $max-width)) {
                     flex: auto;
                 }
 
@@ -126,7 +126,7 @@ body{
         box-sizing: border-box;
         padding: 1em;
 
-        @media (min-width: 0.8 * $max-width) {
+        @media (min-width: calc(0.8 * $max-width)) {
             padding: 2em;
         }
 
@@ -136,7 +136,7 @@ body{
             box-shadow: 0 1px 3px rgba(0,0,0,0.5);
             border-radius: 3px;
 
-            @media (min-width: 0.6 * $max-width) {
+            @media (min-width: calc(0.6 * $max-width)) {
                 max-width: 0.6 * $max-width * $img-max-width;
             }
         }
@@ -162,11 +162,11 @@ body{
             place-items: stretch;
             justify-content: center;
 
-            @media (min-width: 0.6 * $max-width) {
+            @media (min-width: calc(0.6 * $max-width)) {
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            @media (min-width: 0.8 * $max-width) {
+            @media (min-width: calc(0.8 * $max-width)) {
                 grid-template-columns: repeat(4, 1fr);
             }
 
@@ -220,14 +220,14 @@ body{
         padding: 0.5em;
         border-top: 1px solid fade_out($color, 0.9);
 
-        @media (min-width: 0.8 * $max-width) {
+        @media (min-width: calc(0.8 * $max-width)) {
             padding: 1em;
         }
 
         ul, p {
             margin: 0.5em;
 
-            @media (min-width: 0.8 * $max-width) {
+            @media (min-width: calc(0.8 * $max-width)) {
                 margin: 1em;
             }
         }
