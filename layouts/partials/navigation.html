@@ -5,7 +5,7 @@
         {{- $firstUrlElement := print "/" (index (split .Permalink "/") 1) -}}
         {{ range .Site.Menus.main }}
         <li class='{{if or ($.IsMenuCurrent "main" .) (eq ($firstUrlElement|lower) (.URL|lower)) }}active{{end}}'>
-            <a href="{{ .URL }}" title="{{ .Name }}">
+            <a href="{{ .RelPermalink }}" title="{{ .Name }}">
                 {{ .Name }}
             </a>
         </li>

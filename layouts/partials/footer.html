@@ -6,7 +6,7 @@
     <ul>
         {{ range .Site.Menus.footer }}
         <li>
-            <a href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
+            <a href="{{ .RelPermalink }}" title="{{ .Name }}">{{ .Name }}</a>
         </li>
         {{ end }}
     </ul>
