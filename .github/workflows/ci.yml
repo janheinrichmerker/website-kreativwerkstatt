@@ -46,10 +46,9 @@ jobs:
           key: link-checker-${{ github.sha }}
           restore-keys: link-checker-
       - name: 🔄 Check links
-        id: linkCheck
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --require-https --verbose --no-progress --root-dir public/ --cache --max-cache-age 1d --exclude https://twitter.com/H1iReimer/ --exclude heinrich@reimer.family --accept 999 --max-retries 10 --max-redirects 10 public/
+          args: --require-https --verbose --no-progress --root-dir "$(pwd)/public" --cache --max-cache-age 1d --exclude https://twitter.com/H1iReimer/ --exclude heinrich@reimer.family --max-retries 10 --max-redirects 10 public/
           fail: true
       - name: 📤 Upload public pages
         uses: actions/upload-artifact@v4
